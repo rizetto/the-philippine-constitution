@@ -15,6 +15,10 @@ h3 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 p,
 li,
 a,
@@ -45,4 +49,32 @@ span {
 .nav-link--title {
   text-transform: uppercase;
   font-weight: 900;
+}
+
+/* Hero */
+.section--hero {
+  background-color: #111;
+  min-height: calc(100vh - 84px);
+}
+
+.content--hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  min-height: inherit;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #ebfffb;
+  border: 1px solid #111;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card--banner {
+  background-color: #FFD166;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
 }

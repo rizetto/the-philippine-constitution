@@ -53,6 +53,14 @@ img {
   gap: 3rem;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link--title:hover {
+  text-decoration: none;
+}
+
 .nav-item--title,
 .nav-link--title {
   text-transform: uppercase;

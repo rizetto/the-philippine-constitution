@@ -301,7 +301,6 @@ section {
 
 /* Articles */
 .header--articles {
-  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -317,6 +316,8 @@ section {
 
 .article--years {
   flex-direction: column;
+  padding: 0;
+  margin-bottom: 100px;
 }
 
 .article--preamble {
@@ -328,4 +329,37 @@ section {
 .article-content--header {
   border-left: 2px solid #111;
   padding-left: 20px;
+}
+
+.article {
+  display: flex;
+  margin-top: 50px;
+}
+
+.article h3 {
+  min-width: 40%;
+}
+
+.article-body p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.article-body img {
+  padding: 10px;
+  height: 300px;
+  background-color: #ebfffb;
+  border: 2px solid #111;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  .article--preamble,
+  .article {
+    flex-direction: column;
+  }
+
+  .article-body img {
+    margin-top: 20px;
+  }
 }

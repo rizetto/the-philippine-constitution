@@ -38,9 +38,9 @@ span {
 img {
   display: block;
   object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
-  border-radius: inherit;
 }
 
 section {
@@ -195,5 +195,42 @@ section {
   border: 2px solid black;
 }
 
+/* Gallery */
+.content--gallery {
+  text-align: center;
+}
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 800px;
+  margin: 100px 0;
+  background-color: #111;
+}
+
+.art {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #ebfffb;
+  border: 1px solid #111;
+  width: inherit;
+  height: inherit;
+}
+
+.art > .img-container > img {
+  transition: 0.8s;
+  display: block;
+}
+
+.img-container {
+  overflow: hidden;
+  border: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.art:hover > .img-container > img {
+  transform: scale(1.2);
+  transition: 0.4s;
+}
 

@@ -145,6 +145,13 @@ section {
   width: calc(100% - 4rem);
 }
 
+@media screen and (max-width: 620px) {
+  .student-section {
+    position: unset;
+    padding-top: 40px;
+  }
+}
+
 .student-section--tp {
   text-align: right;
 }

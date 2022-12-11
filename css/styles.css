@@ -108,12 +108,21 @@ section {
 .student-section {
   position: absolute;
   bottom: 20px;
+  width: calc(100% - 4rem);
+}
+
+.student-section--tp {
+  text-align: right;
 }
 
 .card--banner {
   background-color: #FFD166;
   grid-column: 3 / 4;
   grid-row: 1 / 3;
+}
+
+.card--color {
+  background-color: violet;
 }
 
 /* Philippines */
